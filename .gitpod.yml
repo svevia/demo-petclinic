@@ -1,0 +1,28 @@
+# Use our custom .gitpod.Dockerfile so that the correct Java versions are used
+image:
+  file: .gitpod.Dockerfile
+
+# List the start up tasks. Learn more: https://www.gitpod.io/docs/configure/workspaces/tasks
+tasks:
+  - name: Start SpringPetClinic
+    init: ./mvnw clean install -U -DskipTests
+    command: ./mvnw spring-boot:run
+
+# List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
+ports:
+  - name: petclinic-dev
+    description: Port 8080 for petclinic-dev running assess
+    port: 8080
+    onOpen: open-preview
+  
+  # - name: petclinic-prod
+  #   description: Port 8081 for petclinic-prod running protect
+  #   port: 8081
+  #   onOpen: open-preview
+
+# Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
+
+vscode:
+  extensions: 
+    - pivotal.vscode-spring-boot
+    - vscjava.vscode-java-pack
