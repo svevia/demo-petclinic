@@ -1,0 +1,11 @@
+{
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "java.compile.nullAnalysis.mode": "automatic",
+    "spring-boot.ls.java.home": "/home/gitpod/.sdkman/candidates/java/17.0.7.fx-zulu/bin/java"
+}

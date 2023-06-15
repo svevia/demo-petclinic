@@ -5,7 +5,9 @@ image:
 # List the start up tasks. Learn more: https://www.gitpod.io/docs/configure/workspaces/tasks
 tasks:
   - name: Start SpringPetClinic
-    init: ./mvnw clean install -U -DskipTests
+    init: |
+      ./mvnw clean install
+      ./mvnw dependency:go-offline 
     command: ./mvnw spring-boot:run
 
 # List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
@@ -25,5 +27,6 @@ ports:
 vscode:
   extensions: 
     - pivotal.vscode-spring-boot
+    - pivotal.vscode-boot-dev-pack
     - vscjava.vscode-java-pack
-
+    - ContrastSecurity.contrastsecurity
