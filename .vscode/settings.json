@@ -7,5 +7,23 @@
         "**/.factorypath": true
     },
     "java.compile.nullAnalysis.mode": "automatic",
-    "spring-boot.ls.java.home": "/home/gitpod/.sdkman/candidates/java/17.0.7.fx-zulu/bin/java"
+    "spring-boot.ls.java.home": "/home/gitpod/.sdkman/candidates/java/17.0.7.fx-zulu/",
+    "java.jdt.ls.java.home": "/home/gitpod/.sdkman/candidates/java/17.0.7.fx-zulu/",
+    "java.configuration.runtimes": [
+
+        {
+          "name": "JavaSE-1.8",
+          // "path": "/home/gitpod/.sdkman/candidates/java/8.0.362-zulu/bin/java",
+          "path": "/home/gitpod/.sdkman/candidates/java/current/",
+          "default":  true
+        },
+        {
+          "name": "JavaSE-11",
+          "path": "/home/gitpod/.sdkman/candidates/java/11.0.19.fx-zulu/",
+         },
+         {
+          "name": "JavaSE-17",
+          "path": "/home/gitpod/.sdkman/candidates/java/17.0.7.fx-zulu/"
+         }
+      ]
 }

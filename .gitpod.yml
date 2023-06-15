@@ -29,4 +29,7 @@ vscode:
     - pivotal.vscode-spring-boot
     - pivotal.vscode-boot-dev-pack
     - vscjava.vscode-java-pack
-    - ContrastSecurity.contrastsecurity
+    - vscjava.vscode-java-debug
+    - vscjava.vscode-java-test
+    - redhat.java
+    - /workspace/demo-petclinic-taylor/ContrastSecurity.contrastsecurity-2.0.0.visx
