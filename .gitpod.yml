@@ -6,9 +6,8 @@ image:
 tasks:
   - name: Start SpringPetClinic
     init: |
-      ./mvnw clean install
-      ./mvnw dependency:go-offline
-      ./mvnw package 
+      ./mvnw clean install -U -DskipTests
+      ./mvnw package -DskipTests
       code --install-extension ContrastSecurity.contrastsecurity-2.0.0.vsix
     command: ./mvnw spring-boot:run
 
@@ -18,13 +17,6 @@ ports:
     description: Port 8080 for petclinic-dev running assess
     port: 8080
     onOpen: open-preview
-  
-  # - name: petclinic-prod
-  #   description: Port 8081 for petclinic-prod running protect
-  #   port: 8081
-  #   onOpen: open-preview
-
-# Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
 vscode:
   extensions: 
@@ -35,16 +27,3 @@ vscode:
     - vscjava.vscode-java-test
     - redhat.java
     # - /workspace/demo-petclinic-taylor/ContrastSecurity.contrastsecurity-2.0.0.visx
-
-github:
-  prebuilds:
-    # enable for the master/default branch (defaults to true)
-    master: true
-    # enable for all branches in this repo (defaults to false)
-    branches: false
-    # enable for pull requests coming from this repo (defaults to true)
-    pullRequests: true
-    # add a check to pull requests (defaults to true)
-    addCheck: true
-    # add a "Review in Gitpod" button as a comment to pull requests (defaults to false)
-    addComment: true
