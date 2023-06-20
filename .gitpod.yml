@@ -7,7 +7,7 @@ tasks:
   - name: Start SpringPetClinic
     init: |
       ./mvnw clean install -U -DskipTests
-      ./mvnw package -DskipTests
+      ./mvnw package -U -DskipTests
       code --install-extension ContrastSecurity.contrastsecurity-2.0.0.vsix
     command: ./mvnw spring-boot:run
 
