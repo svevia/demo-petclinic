@@ -8,7 +8,7 @@ tasks:
     init: |
       ./mvnw clean install -DskipTests
       ./mvnw package -DskipTests
-      # code --install-extension ContrastSecurity.contrastsecurity-2.0.0.vsix
+      npm install playwright
     command: |
       gp open README.md
       ./mvnw spring-boot:run
