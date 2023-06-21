@@ -267,6 +267,7 @@
                     </generateGitPropertiesFilename>
                     <failOnNoGitDirectory>false</failOnNoGitDirectory>
                     <failOnUnableToExtractRepoInfo>false</failOnUnableToExtractRepoInfo>
+                    <offline>true</offline>
                 </configuration>
             </plugin>
 
