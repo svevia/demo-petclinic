@@ -8,7 +8,8 @@ tasks:
     init: |
       ./mvnw clean install -DskipTests
       ./mvnw package -DskipTests
-      npm install playwright
+      npm install -D @playwright/test
+      npx playwright install
     command: |
       gp open README.md
       ./mvnw spring-boot:run

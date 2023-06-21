@@ -44,7 +44,7 @@ If you don't already have a GitPod account, you'll need to sign up at [GitPod.io
 
 Click the button below to start the workshop in GitPod, which is preconfigured with everything you need. GitPod will launch VS Code in the browser that you can use to change source code and configuration, run commands in a terminal and view the running application in a preview window.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/mowsec/demo-nodegoat)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/mowsec/demo-petclinic)
 
 # Workshop Guide
 
@@ -150,7 +150,7 @@ When you're done exploring the application, look at the Contrast Platform to see
 
 ### Test the application with automated tests
 
-This container includes cypress to run automated tests. These can be run using:
+This container includes playwright to run automated tests. With the application still running, open a new terminal and run the following to run these tests:
 
 ```bash
 npx playwright test
